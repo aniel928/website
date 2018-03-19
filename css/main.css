@@ -1,0 +1,106 @@
+@font-face {
+font-family: "HaloHandLetter";
+src: 
+url("css/fonts/HaloHandletter.woff") format("woff"),
+url("css/fonts/HaloHandletter.otf") format("opentype"),
+}
+
+.bg-lightgreen{
+	background-color: #F1F9F2;
+}
+
+.bg-polkadot{
+	/*background-image:url('polkadot.png');*/
+	background-color: #F7DAD0;
+}
+
+.bg-darkpink{
+	background-color: #91414D;
+}
+
+.bg-lightpink{
+	background-color: #FDF4F2;
+}
+
+.bg-medpink{
+	background-color: #DDA6AE;
+}
+
+.bg-extradarkpink{
+	color: #6A202B;
+}
+
+.text-darkpink{
+	color: #91414D;
+}
+
+.text-lightpink{
+	color: #FFE6EA;
+}
+
+.text-medpink{
+	color: #DDA6AE;
+}
+
+.text-extradarkpink{
+	color: #6A202B;
+}
+
+.text-darkgreen{
+	color: #405d27;
+}
+
+a.text-darkgreen:hover{
+	color: #405d27;
+	text-decoration: underline;
+}
+
+.text-limegreen{
+	color: #82b74b;
+}
+
+
+.border-extradarkpink{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #6A202B;
+}
+
+.border-extradarkpink{
+	border-style: solid;
+	border-width: 2px;
+	border-color: #91414D;
+}
+
+#cover{
+	height: 100%;
+	width: 100%;
+	background-color: #FFE6EA;
+	z-index: 1;
+}
+
+.profilePic{
+	margin: 40px auto;
+	/*height: 400px;
+	width: 400px;*/
+	border-radius: 100px;
+}
+#information{
+	box-shadow: 0px 0px 4px 8px #99AA99;
+	-moz-box-shadow: 0px 0px 4px 8px #99AA99;
+	-webkit-box-shadow: 0px 0px 4px 8px #99AA99;
+
+}
+#alignment{
+	margin: 40px 0px;
+}
+
+.top-style{
+	font-family: 'Swanky and Moo Moo'; 
+	font-size: 64px
+}
+
+.social{
+	height:30px;
+	width: 30px;
+}
