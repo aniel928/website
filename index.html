@@ -8,6 +8,8 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
       <link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+      
       <link rel='stylesheet' href='css/main.css'>
       <title>Anne Whitman - Home</title>
   </head>
@@ -21,20 +23,21 @@
             <div class='col-lg-12 mx-auto'>
              <h5 class = 'text-center text-darkgreen' style="font-family: Swanky and Moo Moo"><b>Anne L. Whitman</b></h1>
              <h6 class = 'text-center text-limegreen' style="font-family: Swanky and Moo Moo"><b>Software Developer</b></h4>
+              <img class="show-more my-3" src='resources/img/down.svg'>
             </div>
           </div>
         </div>
 
-        <div id='information' class = 'mx-3 px-3 mb-5 bg-light border'>
+        <div id='information' class = 'mx-3 mb-5 bg-light border'>
           
           <div class="row mt-5 mx-auto px-3">
         
             <div class='col-lg-6 mx-auto'>
-              <img id='me' class='img-fluid profilePic' src='anne.jpg'>
-              <img id='us' class='img-fluid profilePic' style='display: none' src='us.jpeg'>
+              <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg'>
+              <img id='us' class='img-fluid profilePic' src='resources/img/us.jpeg'>
             </div>
            
-            <div id='alignment' class = 'col-lg px-3 text-justify font-weight-light'>
+            <div id='alignment' class = 'col-lg text-justify font-weight-light'>
               <p class = 'lead font-weight-normal text-center '>Background</p>
               <p>&emsp;&emsp;I am currently studying computer science at Rutgers University - New Brunswick.  I will be graduating this May (2018). I am in my final semester taking just eight credits at night before I can claim my degree.</p>
 
@@ -67,17 +70,44 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script> 
-        $(document).ready(function(){
+      <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+      <script> 
+        $(function(){
+
+            //load in navbar and set active tab
             $("#navbar").load("./navbar.html");
-            $("#head").load("./header.html");
-            $("h5").animate({fontSize: "12vmin"},2000);
-            $("h6").animate({fontSize: "8vmin"},2000);
-            $(".lead").animate({fontSize: "5vmin"}, 2000);
-            $( "#home" ).addClass( "active" );
-            $("img").hover(function(){
-                $("img").toggle();
+            $("#home").addClass("active");
+
+            //set size huge when first landing on page
+            $("h5").animate({fontSize: "18vmin"},2000);
+            $("h6").animate({fontSize: "12vmin"},2000);
+            
+            //hide the bulk of the page
+            $("#information").hide();
+
+            //hide image to toggle to.
+            $("#us").hide();
+
+            //bounce the arrow until it's clicked.
+            setInterval(function(){
+              jQuery(".show-more").effect("bounce", {times: 3}, "slow")
+            }, 2000);
+
+            //once arrow is clicked shrink the size of the top text, show the rest of the page, grow the headers inside, and remove the arrow.
+            $(".show-more").hover(function(){
+              $(".show-more").remove();
+              $("h5").animate({fontSize: "12vmin"},2000);
+              $("h6").animate({fontSize: "8vmin"},2000);
+              $(".lead").animate({fontSize: "5vmin"}, 2000);
+              $("#information").slideDown();
+            })
+            
+            //when hovering over the main picture, toggle back and forth between pictures.
+            $(".profilePic").hover(function(){
+                $(".profilePic").toggle();
               });
         });
         </script> 

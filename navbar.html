@@ -23,16 +23,16 @@
              
     </ul>
     <ul class='my-2 my-lg-0 navbar-nav'>
-        <li id='github' style='display:none'>       
-            <a class='nav-link' href="https://www.github.com/aniel928" target='_blank'><img class='social' src='git-icon.svg'></a>
+        <li id='github'>
+            <a class='nav-link' href="https://www.github.com/aniel928" target='_blank'><img class='social' src='resources/img/git-icon.svg'></a>
         </li>
-        <li id='linkedin' style='display:none'>
-            <a class='nav-link' href="https://www.linkedin.com/in/anne-whitman" target='_blank'><img class='social' src='linkedin-icon.png'></a>
+        <li id='linkedin'>
+            <a class='nav-link' href="https://www.linkedin.com/in/anne-whitman" target='_blank'><img class='social' src='resources/img/linkedin-icon.png'></a>
         </li>
-        <li id='twitter' style='display:none'>
-            <a class='nav-link' href="https://www.twitter.com/annielostheri" target='_blank'><img class='social' src='twitter-icon.png'></a>
+        <li id='twitter'>
+            <a class='nav-link' href="https://www.twitter.com/annielostheri" target='_blank'><img class='social' src='resources/img/twitter-icon.png'></a>
         </li>  
-        <li id='more' class="nav-item dropdown">
+        <!-- <li id='more' class="nav-item dropdown">
             <a id='morelink' class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" target='_blank' href="https://bitbucket.org/aniel928">My BitBucket</a>
@@ -40,15 +40,20 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="contact.html">Contact Me</a>
             </div>
-        </li>
+        </li> -->
     </ul>
 </div>
 <script>
     $(document).ready(function(){
+        $("#github").hide();
+        $("#twitter").hide();
+        $("#linkedin").hide();
+        
+
         $("#navbar").hover(function(){
-            $("#github").slideToggle();
-            $("#twitter").slideToggle();
-            $("#linkedin").slideToggle();
+            $("#github").fadeToggle(500);
+            $("#twitter").fadeToggle(500);
+            $("#linkedin").fadeToggle(500);
         });    
     })
     

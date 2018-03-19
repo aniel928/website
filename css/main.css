@@ -89,6 +89,7 @@ a.text-darkgreen:hover{
 	box-shadow: 0px 0px 4px 8px #99AA99;
 	-moz-box-shadow: 0px 0px 4px 8px #99AA99;
 	-webkit-box-shadow: 0px 0px 4px 8px #99AA99;
+	/*padding: 20px 20px 20px 20px;*/
 
 }
 #alignment{
@@ -103,4 +104,9 @@ a.text-darkgreen:hover{
 .social{
 	height:30px;
 	width: 30px;
+}
+
+.show-more{
+	height:100px;
+	width:100px;
 }
