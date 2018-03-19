@@ -20,24 +20,24 @@
       <div class='container mx-auto mt-5 align-middle'>
         <div class='align-middle'>
           <div class='row my-3 text-center'>
-            <div class='col-lg-12 mx-auto'>
-             <h5 class = 'text-center text-darkgreen' style="font-family: Swanky and Moo Moo"><b>Anne L. Whitman</b></h1>
-             <h6 class = 'text-center text-limegreen' style="font-family: Swanky and Moo Moo"><b>Software Developer</b></h4>
-              <img class="show-more my-3" src='resources/img/down.svg'>
+            <div class='col-lg-12 mx-auto my-3'>
+             <h1 class = 'name text-center text-darkgreen'><b>Anne L. Whitman</b></h1>
+             <h2 class = 'title text-center text-limegreen'><b>Software Developer</b></h2>
+              
             </div>
           </div>
         </div>
 
-        <div id='information' class = 'mx-3 mb-5 bg-light border'>
+        <div id='information' class = 'main mx-3 mb-5 bg-light border'>
           
           <div class="row mt-5 mx-auto px-3">
         
-            <div class='col-lg-6 mx-auto'>
+            <div class='picContainer col-lg-6 mx-auto'>
               <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg'>
-              <img id='us' class='img-fluid profilePic' src='resources/img/us.jpeg'>
+              <img id='us' class='img-fluid profilePic' src='resources/img/curious.jpg'>
             </div>
            
-            <div id='alignment' class = 'col-lg text-justify font-weight-light'>
+            <div class = 'col-lg text-justify font-weight-light px-1'>
               <p class = 'lead font-weight-normal text-center '>Background</p>
               <p>&emsp;&emsp;I am currently studying computer science at Rutgers University - New Brunswick.  I will be graduating this May (2018). I am in my final semester taking just eight credits at night before I can claim my degree.</p>
 
@@ -48,11 +48,11 @@
 
           </div>
           <div class = "row px-3 mx-auto">
-            <div class = 'col-lg px-3 text-center font-weight-light'>
+            <div class = 'col-lg px-1 text-center font-weight-light'>
               <p class = 'lead font-weight-normal text-center'>Languages</p>
               <p>Java/JSP • C • PHP • Python • HTML • CSS • JavaScript • SQL • Visual Basic.NET • x86 Assembly • Git </p>
             </div>
-            <div class = 'col-lg px-3 text-center font-weight-light'>
+            <div class = 'col-lg px-1 text-center font-weight-light'>
               <p class = 'lead font-weight-normal text-center'>Operating Systems</p>
               <p>Windows • macOS • Linux/Ubuntu</p>
             </div>
@@ -74,42 +74,31 @@
       
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-      <script> 
+      
+    <script> 
         $(function(){
 
             //load in navbar and set active tab
-            $("#navbar").load("./navbar.html");
-            $("#home").addClass("active");
-
-            //set size huge when first landing on page
-            $("h5").animate({fontSize: "18vmin"},2000);
-            $("h6").animate({fontSize: "12vmin"},2000);
+            $("#navbar").load("./navbar.html", function(){
+              $("#home").addClass("active");  
+            });
             
-            //hide the bulk of the page
-            $("#information").hide();
-
-            //hide image to toggle to.
-            $("#us").hide();
-
-            //bounce the arrow until it's clicked.
-            setInterval(function(){
-              jQuery(".show-more").effect("bounce", {times: 3}, "slow")
-            }, 2000);
-
-            //once arrow is clicked shrink the size of the top text, show the rest of the page, grow the headers inside, and remove the arrow.
-            $(".show-more").hover(function(){
-              $(".show-more").remove();
-              $("h5").animate({fontSize: "12vmin"},2000);
-              $("h6").animate({fontSize: "8vmin"},2000);
-              $(".lead").animate({fontSize: "5vmin"}, 2000);
-              $("#information").slideDown();
-            })
+            //intro animations
+            $(".name").delay(1000).animate({fontSize: "10vmin"},500);
+            $(".title").delay(1000).animate({fontSize: "6vmin"},500);
+            $("#information").delay(2000).slideDown(2000);
             
             //when hovering over the main picture, toggle back and forth between pictures.
-            $(".profilePic").hover(function(){
-                $(".profilePic").toggle();
-              });
+            $(".picContainer").mouseenter(function(){
+              $("#us").show();
+              $("#me").hide();
+            });
+            $(".picContainer").mouseleave(function(){
+              $("#me").show();
+              $("#us").hide();
+            });
         });
         </script> 
+
     </body>
 </html>
