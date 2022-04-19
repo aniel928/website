@@ -1,104 +1,145 @@
 <!doctype html>
 <html lang="en">
-  <head>
-          <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-      <link href='https://fonts.googleapis.com/css?family=Swanky and Moo Moo' rel='stylesheet'>
-      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-      
-      <link rel='stylesheet' href='css/main.css'>
-      <title>Anne Whitman - Home</title>
-  </head>
-    <body class='bg-lightgreen'>
-      <nav id = 'navbar' class="navbar navbar-expand-lg navbar-dark bg-dark">
-      </nav>
-      
-      <div class='container mx-auto mt-5 align-middle'>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Baloo+2:wght@400;500;600;700;800&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Swanky+and+Moo+Moo&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <link title="switcheroo" rel='stylesheet' href='resources/css/main.css'>
+
+    <title>Anne Whitman - Home</title>
+</head>
+
+<body>
+    <nav id='navbar' class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+
+    <div class='container align-middle text-lightcolor'>
         <div class='align-middle'>
-          <div class='row my-3 text-center'>
-            <div class='col-lg-12 mx-auto my-3'>
-             <h1 class = 'name text-center text-darkgreen'><b>Anne L. Whitman</b></h1>
-             <h2 class = 'title text-center text-limegreen'><b>Software Developer</b></h2>
-              
+            <div class='row my-3 text-center'>
+
+                <div class='picContainer col-lg-3 mx-auto'>
+                    <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg'>
+                    <img id='us' class='img-fluid profilePic' src='resources/img/curious.jpg'>
+                </div>
+
+
+                <div class='nameContainer col-lg-9 mx-auto'>
+                    <h1 class='name text-center text-darkcolor'><b>Anne L. Whitman</b></h1>
+                    <h2 class='title text-center text-lightcolor'><b>Full Stack Engineer</b></h2>
+
+                </div>
             </div>
-          </div>
         </div>
 
-        <div id='information' class = 'main mx-3 mb-5 bg-light border'>
-          
-          <div class="row mt-5 mx-auto px-3">
-        
-            <div class='picContainer col-lg-6 mx-auto'>
-              <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg'>
-              <img id='us' class='img-fluid profilePic' src='resources/img/curious.jpg'>
-            </div>
-           
-            <div class = 'col-lg text-justify font-weight-light px-1'>
-              <p class = 'lead font-weight-normal text-center '>Background</p>
-              <p>&emsp;&emsp;I am currently studying computer science at Rutgers University - New Brunswick.  I will be graduating this May (2018). I am in my final semester taking just eight credits at night before I can claim my degree.</p>
+        <hr />
 
-              <p>&emsp;&emsp;Although most of my coding experience comes from school projects, I have also had a couple of internships and currently hold a student role through Rutgers University Information Technology at Continuing Studies.  In this role I have coded web applications and worked with both front-end and back-end development.</p>
+        <!-- 
+            Todo: hide for now, fill in with temporary text with short bio 
+            Story Time
 
-              <p>&emsp;&emsp;In addition to my coding experience, I also have seven years of experience in Supply Chain (supply and demand planning roles), as well as project management. I believe this could really prove useful, even when transitioning into a software development role.</p>
+            <div class = 'col-lg text-center font-weight-light px-1 story-container'>
+                <div class="story-text-container">
+                <p> Would you like to hear a story? </p>
+                </div>
+                <div class="story-button-container">
+                <button id="story-time-button">Tell Me A Story</button>
+                </div>
             </div>
+        -->
 
-          </div>
-          <div class = "row px-3 mx-auto">
-            <div class = 'col-lg px-1 text-center font-weight-light'>
-              <p class = 'lead font-weight-normal text-center'>Languages</p>
-              <p>Java/JSP • C • PHP • Python • HTML • CSS • JavaScript • SQL • Visual Basic.NET • x86 Assembly • Git </p>
+        <div class="row px-3 mx-auto">
+            <div class='col-lg px-3 text-center font-weight-light'>
+                <div class='px-3 text-center font-weight-light'>
+                    <h3 class=""> About Me </h3>
+                </div>
             </div>
-            <div class = 'col-lg px-1 text-center font-weight-light'>
-              <p class = 'lead font-weight-normal text-center'>Operating Systems</p>
-              <p>Windows • macOS • Linux/Ubuntu</p>
+        </div>
+        <div class="row px-3 mx-auto">
+            <div class='col-lg px-3 text-center font-weight-light'>
+                <div class='px-1 text-center font-weight-light'>
+                    <p>Software Developer. Book Worm. Grammar Snob. Craft Beer Enthusiast. Harry Potter Nerd. Cat
+                        Person. </p>
+                </div>
             </div>
-          </div>
-          <div class = "row px-3 mx-auto ">
+        </div>
+
+        <hr />
+
+        <!-- Todo: hide for now: need to push style changes
+            CSS Style Change
+
+            <div>
+                <button class="change-style" data-style-ref="main.css">Change Style Main</button>
+                <button class="change-style" data-style-ref="main2.css">Change Style Main2</button>
+            </div>
+        -->
+
+        <div class="row px-3 mx-auto">
+            <div class='col-lg px-3 text-center font-weight-light'>
+                <h3 class='text-center'> Languages / Programs / Skills </h3>
+            </div>
+        </div>
+        <div class="row px-3 mx-auto">
+            <div class='col-lg px-1 text-center font-weight-light'>
+                <h5 class='text-center'>Worked with Heavily and Recently</h5>
+                <p>PHP • MySQL • React • JavaScript • jQuery • HTML • CSS • Git </p>
+                <p>IntelliJ • MySQL Workbench </p>
+                <p>macOS • Linux/Ubuntu • Docker Container Environment • Virtual Machine Environment</p>
+                <p>Bootstrap • HandleBars.js</p>
+            </div>
+            <div class='col-lg px-1 text-center font-weight-light'>
+                <h5 class='text-center'>Worked With in the Past</h5>
+                <p>Java • C • Python • JSP • Firebase Database</p>
+                <p>Laravel Framework • Eclipse </p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!--
+            Todo: hide for now - move to some sort of tools links later
+            Simple Color Tester
+
+            <div class="row px-3 mx-auto">
             <div class = 'col-lg px-3 text-center font-weight-light'>
-              <p class = 'lead font-weight-normal text-center'>Other Technologies</p>
-              <p> Eclipse • Virtual Machine (Ubuntu server) Development • Laravel Framework • Bootstrap • MySQL Workbench • Firebase Database • Ignition Software • Apache Tomcat • Client/Server Applications • Process/Thread-based Coding • Robust Code Design • Web/Application Development</p>
+                <div class="hex-square-container">
+                <div class="hex-square"></div>
+                <input id="hex-code-input" type="text" placeholder="#FFFFFF"/>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-      <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        -->
+    </div>
+    </div>
+    <!-- </div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
 
-      
-    <script> 
-        $(function(){
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="resources/js/functions.js"></script>
+</body>
 
-            //load in navbar and set active tab
-            $("#navbar").load("./navbar.html", function(){
-              $("#home").addClass("active");  
-            });
-            
-            //intro animations
-            $(".name").delay(1000).animate({fontSize: "10vmin"},500);
-            $(".title").delay(1000).animate({fontSize: "6vmin"},500);
-            $("#information").delay(2000).slideDown(2000);
-            
-            //when hovering over the main picture, toggle back and forth between pictures.
-            $(".picContainer").mouseenter(function(){
-              $("#us").show();
-              $("#me").hide();
-            });
-            $(".picContainer").mouseleave(function(){
-              $("#me").show();
-              $("#us").hide();
-            });
-        });
-        </script> 
-
-    </body>
 </html>
