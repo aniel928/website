@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #585858;
     color: #d0bf9b;
@@ -43,23 +47,15 @@ a.text-darkcolor:hover {
 
 .picContainer {
     float: left;
+    margin: auto;
 }
 
 .nameContainer {
     display: grid;
-    /* border: 1px solid #72676b;
-    background: #232323; */
     left: -15px;
     float: left;
-}
-
-@media (max-width: 990px) {
-    .nameContainer {
-        margin: 15px 0 0 0;
-        background: transparent;
-        border: none;
-        left: 0px;
-    }
+    margin: auto;
+    padding: 0 10px 0;
 }
 
 .nameContainer h1,
@@ -96,7 +92,7 @@ h2 {
 
 .name {
     font-family: "Swanky and Moo Moo";
-    font-size: 10vmin;
+    font-size: 8vmin;
 }
 
 .title {
