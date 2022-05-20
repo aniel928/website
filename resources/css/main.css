@@ -1,3 +1,15 @@
+.modal-content {
+    background-color: #1e2229;
+}
+
+.modal-content .modal-header,
+.modal-content .modal-footer,
+.modal-content .btn:not(:hover) {
+    border-color: #424242;
+    color: #d0bf9b;
+}
+
+
 * {
     box-sizing: border-box;
 }

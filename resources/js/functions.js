@@ -85,6 +85,10 @@ function startAnimations() {
         $("#home").addClass("active");
     });
 
+    // enable popovers and tooltips where they exist.
+    $('[data-bs-toggle="popover"]').popover();
+    $('[data-toggle="tooltip"]').tooltip();
+
     // when hovering over the main picture, toggle back and forth between pictures.
     $(".profilePic").mouseenter(function () {
         $("#us").show();

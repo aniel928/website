@@ -1,0 +1,4 @@
+/* Force border-width and padding values into the total width and height of all boxes site-wide */
+* {
+    box-sizing: border-box;
+}
