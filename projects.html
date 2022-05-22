@@ -6,9 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/resources/img/favicon.ico">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
-        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,29 +39,36 @@
     <div class='container mb-3 px-5 py-3'>
         <div class="row mb-3">
             <h3> Work Projects </h3>
-            <div class="card-deck">
-                <div class="card">
-                    <a href="admin/index.html" target="_blank"><img class="card-img-top"
-                            src="resources/img/RUOnlineCon.png" alt="Ru Online Con"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Moderation Website for Mosaic App</h4>
-                        <p class="card-text">Moderation web app to accompany mobile app designed for a teacher's
-                            conference.</p>
-                        <p class="card-text">The mobile app is designed for attendees to take and post pictures to earn
-                            points and form a mosaic, this web app is for moderation of those pictures</p>
-                        <p>Use admin@admin.com/test123 to login and navigate.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="admin/index.html" target="_blank"><img class="card-img-top"
+                                src="resources/img/RUOnlineCon.png" alt="Ru Online Con"></a>
+                        <div class="card-body px-2">
+                            <h4 class="card-title">Moderation Website for Mosaic App</h4>
+                            <p class="card-text">Moderation web app to accompany mobile app designed for a teacher's
+                                conference.</p>
+                            <p class="card-text">The mobile app is designed for attendees to take and post pictures to
+                                earn
+                                points and form a mosaic, this web app is for moderation of those pictures</p>
+                            <p>Use admin@admin.com/test123 to login and navigate.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img class="card-img-top" src='resources/img/CMSCE.png' alt="Card image cap">
-                    <div class="card-block px-2">
-                        <h4 class="card-title">CMSCE</h4>
-                        <p class="card-text">Workshop registration and invoice/contract generation for Rutgers Center
-                            for Mathematics, Science, and Computer Education.</p>
-                        <p class="card-text"><small class="text-muted"> (Not yet published.) </small></p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src='resources/img/CMSCE.png' alt="Card image cap">
+                        <div class="card-body px-2">
+                            <h4 class="card-title">CMSCE</h4>
+                            <p class="card-text">Workshop registration and invoice/contract generation for Rutgers
+                                Center
+                                for Mathematics, Science, and Computer Education.</p>
+                        </div>
                     </div>
                 </div>
-                <div class='card empty'></div>
+                <div class="col">
+                    <div class='card empty h-100'></div>
+                </div>
             </div>
             <!-- Todo: add sitecompli stuff here:
                 - https://www.youtube.com/watch?v=JJWCWO_L58I&ab_channel=SiteCompli
@@ -67,92 +79,130 @@
 
         <div class="row my-3">
             <h3> School Projects </h3>
-            <div class="card-deck">
-                <div class="card">
-                    <a href="projects_details.html" target="_blank"><img class="card-img-top"
-                            src="resources/img/fakeCode.jpg" alt="fake code"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Full Project Website</h4>
-                        <p class="card-text"> Most of my school projects are in Java and C. Please follow this link to
-                            see more recent school projects like my HTTP Server (Java), Partial Operating System (C),
-                            and more.</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="projects_details.html" target="_blank"><img class="card-img-top"
+                                src="resources/img/fakeCode.jpg" alt="fake code"></a>
+                        <div class="card-body px-2">
+                            <h4 class="card-title">Full Project Website</h4>
+                            <p class="card-text"> Most of my school projects are in Java and C. Please follow this link
+                                to
+                                see more recent school projects like my HTTP Server (Java), Partial Operating System
+                                (C),
+                                and more.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href='https://airline-reservations.herokuapp.com' target="_blank"><img class="card-img-top"
-                            src="resources/img/ComeFlyAwayLogo.jpg" alt="Card image cap"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Airline Reservation</h4>
-                        <p class="card-text">Summer group project. I was in charge of the logic between pages
-                            (particularly for flight reservations). Other members handled database design and CSS.</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href='https://github.com/aniel928/CS336' target="_blank">
+                            <img class="card-img-top" src="resources/img/ComeFlyAwayLogo.jpg"
+                                alt="Logo for flight reservation site">
+                        </a>
+                        <div class="card-body px-2">
+                            <h4 class="card-title">Airline Reservation</h4>
+                            <p class="card-text">Summer group project. I was in charge of the logic between pages
+                                (particularly for flight reservations). Other members handled database design and CSS.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <a href='https://reverse-job-board.herokuapp.com/' target="_blank"><img class="card-img-top"
-                            src="resources/img/rjb.jpg" alt="Card image cap"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Reverse Job Board</h4>
-                        <p class="card-text">My very first website. Capstone project to graduate Brookdale Community
-                            College with an A.S. in Computer Science. </p>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://github.com/aniel928/reverseJobBoard" target="_blank"><img class="card-img-top"
+                                src="resources/img/rjb.jpg" alt="reverse job board logo"></a>
+                        <div class="card-body px-2">
+                            <h4 class="card-title">Reverse Job Board</h4>
+                            <p class="card-text">My very first website. Capstone project to graduate Brookdale Community
+                                College with an A.S. in Computer Science. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <a href="https://github.com/aniel928/CS213/tree/master/Chess30" target="_blank"><img
+                                class="card-img-top" src="resources/img/chess.jpg" alt="fake code"></a>
+                        <div class="card-body px-2">
+                            <h4 class="card-title">Two Player Chess</h4>
+                            <p class="card-text"> Coded in Java. Command line game. Includes en passant, castling
+                                (standard
+                                and Queen-side),
+                                promotion, draw, resignation, checkmate, and stalemate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card empty h-100">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card empty h-100">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="card-deck">
-                <div class="card">
-                    <a href="projects_details.html" target="_blank"><img class="card-img-top"
-                            src="resources/img/chess.jpg" alt="fake code"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Two Player Chess</h4>
-                        <p class="card-text"> Coded in Java. More information coming soon. Command line game. Includes
-                            en passant, castling (standard and Queen-side), promotion, draw, resignation, checkmate, and
-                            stalemate.</p>
+            <hr class="my-4">
+            <div class="row mt-3">
+                <h3> Personal Projects </h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://github.com/aniel928/DeLitter" target="_blank">
+                                <img class="card-img-top" src="resources/img/deLItter.png" alt="DeLitter logo">
+                            </a>
+                            <div class="card-body px-2">
+                                <h4 class="card-title">DeLitter</h4>
+                                <p class="card-text">Hackathon project. Mobile application to determine location of
+                                    nearest
+                                    trash can /
+                                    recyling receptacle. Won overall 3rd place as well as "Best Environmental Hack"</p>
+                                <p>Coded with Android Studio, uses Firebase Realtime DB for storage. Google Maps APIs
+                                    used.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card empty">
-                </div>
-                <div class="card empty">
-                </div>
-            </div>
-        </div>
-        <hr class="my-4">
-        <div class="row mt-3">
-            <h3> Personal Projects </h3>
-            <div class="card-deck">
-                <div class="card">
-
-                    <a href='https://ninth-life.herokuapp.com' target="_blank"><img class="card-img-top"
-                            src="resources/img/catdog.jpeg" alt="Card image cap"></a>
-                    <div class="card-block px-2">
-                        <h4 class="card-title">Ninth Life</h4>
-                        <p class="card-text">Hackathon project providing Pet Rescue as a form of Disaster Relief. Won
-                            1st place for JP Morgan's "Best Hack for the Social Good"</p>
-                        <p>Coded with PHP, SQL, Bootstrap. DB hosted on AWS, Google Maps APIs used.</p>
-                        <p><strong>Note: This entire website was coded in 16 hours (we have not updated it since). So
-                                beware of security risks and potential bugs while navigating. Do not use real emails or
-                                passwords.</strong></p>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://github.com/aniel928/ninthLife" target="_blank">
+                                <img class="card-img-top" src="resources/img/catdog.jpeg" alt="Cute pets">
+                            </a>
+                            <div class="card-body px-2">
+                                <h4 class="card-title">Ninth Life</h4>
+                                <p class="card-text">Hackathon project providing Pet Rescue as a form of Disaster
+                                    Relief.
+                                    Won
+                                    1st place for JP Morgan's "Best Hack for the Social Good"</p>
+                                <p>Coded with PHP, SQL, Bootstrap.
+                                    <!-- DB hosted on AWS, --> Google Maps APIs used.
+                                </p>
+                                <!-- <p><strong>Note: This entire website was coded in 16 hours (we have not updated it since). So
+                                        beware of security risks and potential bugs while navigating. Do not use real emails or
+                                        passwords.</strong></p> -->
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="card empty">
-                </div>
-                <div class="card empty">
+                    <div class="col">
+                        <div class="card empty h-100"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap: JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
-        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!-- Site specific -->
+    <script src="resources/js/functions.js"></script>
     <script>
         $(document).ready(function () {
             //load in navbar and set active tab
