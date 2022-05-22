@@ -76,11 +76,11 @@ const gettingToKnowMe = {
 function startAnimations() {
     // load in navbar and set active tab
     $("#navbar").load("navbar.html", function () {
-        $("#github, #twitter, #linkedin").hide();
+        // $("#github, #twitter, #linkedin").hide();
 
-        $("#navbar").hover(function () {
-            $("#github, #twitter, #linkedin").fadeToggle(500);
-        });
+        // $("#navbar").hover(function () {
+        //     $("#github, #twitter, #linkedin").fadeToggle(500);
+        // });
 
         $("#home").addClass("active");
     });
