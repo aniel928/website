@@ -9,7 +9,6 @@
     color: #d0bf9b;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -20,6 +19,16 @@ body {
     font-family: 'Overlock';
     font-size: 20px;
     font-weight: light;
+}
+
+a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b7777;
+    text-decoration: underline;
 }
 
 hr {
@@ -189,3 +198,15 @@ h2 {
 .card-block {
     margin-top: 20px !important;
 }
+
+/*
+
+media queries at bottom.
+solve mobile / small screen in regular css
+bigger screens go into media queries as a general rule
+
+@media screen and (min-width: 421px) {
+    ...
+}
+
+*/
