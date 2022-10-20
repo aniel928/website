@@ -20,35 +20,40 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Baloo+2:wght@400;500;600;700;800&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Swanky+and+Moo+Moo&display=swap"
         rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Baloo+2:wght@400;500;600;700;800&family=Grenze+Gotisch&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Swanky+and+Moo+Moo&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel='stylesheet' href='resources/css/main.css'>
 
-    <link title="switcheroo" rel='stylesheet' href='resources/css/main.css'>
+    <link title="switcheroo" rel='stylesheet'>
 
     <title>Anne Whitman - Home</title>
 </head>
 
-<body>
+<body class="hidden">
     <nav id='navbar' class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
 
-    <div class='container align-middle text-lightcolor'>
-        <div class='align-middle'>
-            <div class='row my-3 text-center'>
+    <div class='container text-lightcolor'>
 
-                <div class='col picContainer'>
-                    <!-- <figure> -->
-                    <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg' alt=''>
-                    <img id='us' class='img-fluid profilePic' src='resources/img/curious.jpg' alt=''>
-                    <!-- <figcaption>Getting naturey.</figcaption> -->
-                    <!-- </figure> -->
-                </div>
+        <!-- todo: mobile looks weird, need flex-flow column and different margins probably -->
+        <div id='site-header'>
+            <div class='picContainer'>
+                <!-- <figure> -->
+                <img id='me' class='img-fluid profilePic' src='resources/img/anne.jpg' alt=''>
+                <img id='us' class='img-fluid profilePic hidden' src='resources/img/curious.jpg' alt=''>
+                <!-- <figcaption>Getting naturey.</figcaption> -->
+                <!-- </figure> -->
+            </div>
 
 
-                <div class='col nameContainer'>
-                    <h1 class='name text-center text-darkcolor'><b>Anne L. Whitman</b></h1>
-                    <h2 class='title text-center text-lightcolor'><b>Full Stack Engineer</b></h2>
-
-                </div>
+            <div class='nameContainer'>
+                <h1 class='name text-darkcolor'><b>Anne L. Whitman</b></h1>
+                <h2 class='title text-lightcolor'><b>Full Stack Engineer</b></h2>
             </div>
         </div>
 
@@ -68,23 +73,24 @@
             </div>
         -->
 
-        <div class="row px-3 mx-auto">
-            <div class='col-lg px-3 text-center font-weight-light'>
-                <div class='px-3 text-center font-weight-light'>
-                    <h3 class=""> About Me </h3>
-                </div>
-            </div>
-        </div>
-        <div class="row px-3 mx-auto">
-            <div class='col-lg px-3 text-center font-weight-light'>
-                <div class='px-1 text-center font-weight-light'>
-                    <p>Software Developer. Book Worm.
+        <div id="about-me">
+            <h3 class=""> About Me </h3>
+            <div class=''>
+                <div class=''>
+                    <p>
+                        Software Developer (by trade). Book Worm (by train ride).
                         <!-- <a href="#" class="noShowLink" data-bs-toggle="modal" data-bs-target="#videoModal">Grammar
                             Snob.</a> -->
                         <a href="https://www.youtube.com/watch?v=8Gv0H-vPoDc" target="_blank" class="noShowLink">Grammar
-                            Snob.</a>
-                        Craft Beer Enthusiast. Harry Potter Nerd. Caffeine
-                        Addict. Cat Person.
+                            Snob (by genetics).</a>
+                        Craft Beer Enthusiast (by weekend). Harry Potter Nerd (for life). Caffeine
+                        Addict (by necessity). Cat Person (fur-ever).
+                    </p>
+                    <p>
+                        On weekends you can find me at a local brewery, taking a (short, mild) hike in the greater NJ
+                        area, or at Target and Wegmans restocking the pantry. During the week I spend my work days
+                        convert coffee into code and otherwise exploring Flatiron District (the NYC neighborhood I work
+                        in - hybridly).
                     </p>
                 </div>
             </div>
@@ -92,30 +98,19 @@
 
         <hr />
 
-        <!-- Todo: hide for now: need to push style changes
-            CSS Style Change
+        <img id="newpaper-image" class="hidden" href="">
 
+        <div id="skills">
+            <h3> Languages / Programs / Skills </h3>
             <div>
-                <button class="change-style" data-style-ref="main.css">Change Style Main</button>
-                <button class="change-style" data-style-ref="main2.css">Change Style Main2</button>
-            </div>
-        -->
-
-        <div class="row px-3 mx-auto">
-            <div class='col-lg px-3 text-center font-weight-light'>
-                <h3 class='text-center'> Languages / Programs / Skills </h3>
-            </div>
-        </div>
-        <div class="row px-3 mx-auto">
-            <div class='col-lg px-1 text-center font-weight-light'>
-                <h5 class='text-center'>Worked with Heavily and Recently</h5>
+                <h5>Worked with Heavily and Recently</h5>
                 <p>PHP • MySQL • React • JavaScript • jQuery • HTML • CSS • Git </p>
                 <p>IntelliJ • MySQL Workbench </p>
                 <p>macOS • Linux/Ubuntu • Docker Container Environment • Virtual Machine Environment</p>
                 <p>Bootstrap • HandleBars.js</p>
             </div>
-            <div class='col-lg px-1 text-center font-weight-light'>
-                <h5 class='text-center'>Worked with in the Past</h5>
+            <div>
+                <h5>Worked with in the Past</h5>
                 <p>Java • C • Python • JSP • Firebase Database</p>
                 <p>Laravel Framework • Eclipse </p>
             </div>
@@ -136,31 +131,6 @@
             </div>
         -->
 
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="videoModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-            <!-- Modal content-->
-            <div class="modal-content" style="width: 90%">
-                <div class="modal-header">
-                    <h4 class="modal-title">Like It Was Written For Me</h4>
-                    <button type="button" class="btn btn-default" class="close" data-bs-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body text-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8Gv0H-vPoDc"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
     </div>
 
     <!-- jQuery -->

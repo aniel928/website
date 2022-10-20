@@ -162,6 +162,9 @@ function setStoryListeners() {
 }
 
 $(function () {
+    $("link[title='switcheroo']").attr("href", (localStorage.getItem('cssSelection') || 'resources/css/style1.css'));
+    $('body').removeClass('hidden');
+
     startAnimations();
     setStoryListeners();
 
@@ -172,10 +175,12 @@ $(function () {
     });
 
     // todo: move to separate file when moving to themes.
-    $('.change-style').click(function (ev) {
+    $('#navbar').on('click', '.change-style', function (ev) {
         ev.preventDefault();
         const newStyleSheet = 'resources/css/' + $(this).data("style-ref");
         $("link[title='switcheroo']").attr("href", newStyleSheet);
+
+        localStorage.setItem('cssSelection', newStyleSheet);
     });
 
 
