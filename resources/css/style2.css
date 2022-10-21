@@ -1,0 +1,155 @@
+/* Newspaper style */
+
+body {
+    /* background: #4169e180; */
+    background: #F5F2E8;
+    /* color: #304da5b3; */
+    color: #5A5A5A;
+    font-family: "Franklin Gothic", Monospace;
+    min-width: 405px;
+    text-align: justify;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #5A5A5A;
+}
+
+h1,
+h2 {
+    font-family: 'Grenze Gotisch', cursive;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 900;
+}
+
+h5 {
+    font-weight: 700;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+#changeStyle a.drop-down-item.change-style {
+    text-decoration: none;
+    color: grey;
+    margin-left: 10px;
+}
+
+#about-me,
+#skills {
+    float: left;
+    margin: 20px 5px;
+    padding: 20px;
+    overflow: scroll;
+    width: calc(50% - 10px);
+}
+
+#about-me::before {
+    content: '';
+    float: left;
+    width: 175px;
+    height: 175px;
+}
+
+#about-me p,
+#skills p {
+    text-align: justify;
+}
+
+#site-header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+.name {
+    /* display: inline; */
+    /* todo: make flex? */
+    font-size: 30px;
+    margin-left: 28px;
+    margin-top: -10px;
+}
+
+.name::before {
+    content: 'by ';
+    font-size: 20px;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.picContainer {
+    position: absolute;
+    top: 300px;
+    left: 35px;
+}
+
+.title {
+    color: #6d6a6a;
+    font-size: 100px;
+    margin-left: 20px;
+}
+
+/* .title::after {
+    content: ')';
+}
+.title::before {
+    content: '(';
+} */
+
+.navbar-dark.bg-dark {
+    background-color: #5A5A5A !important;
+}
+
+.navbar-brand {
+    color: #cfccc3;
+}
+
+.nav-link {
+    color: #F5F2E8;
+}
+
+hr {
+    height: 0px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+img {
+    float: left;
+    filter: grayscale(1);
+    /* margin-left: -15px;
+    margin-right: -15px;
+    width: calc(100% + 30px); */
+}
+
+#me,
+#us {
+    margin-left: 5px;
+    margin-right: 20px;
+    min-width: 150px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 990px) {
+    .picContainer {
+        top: 400px;
+    }
+}
