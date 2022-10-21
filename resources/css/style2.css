@@ -159,20 +159,9 @@ img {
 
 @media only screen and (max-width: 400px) {
 
-    #about-me,
-    #skills,
-    .nameContainer {
-        position: relative;
-        bottom: 125px;
-    }
-
     #about-me p,
     #skills p {
         text-align: left;
-    }
-
-    #site-header {
-        flex-direction: column;
     }
 
     .picContainer {
