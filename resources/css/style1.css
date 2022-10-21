@@ -60,6 +60,7 @@ iframe {
 .container {
     background-color: #282828;
     margin: 30px auto;
+    min-width: 400px;
     padding: 30px;
     vertical-align: middle !important;
 }
@@ -139,13 +140,7 @@ h2 {
 
 .name {
     font-family: "Swanky and Moo Moo";
-    font-size: 8vmin;
-}
-
-@media only screen and (max-width: 991px) {
-    .name {
-        font-size: 6vmin;
-    }
+    font-size: 96px;
 }
 
 .title {
@@ -209,3 +204,38 @@ bigger screens go into media queries as a general rule
     ...
 }
 */
+
+@media only screen and (max-width: 1200px) {
+
+    .name,
+    .title {
+        font-size: 72px;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    .name,
+    .title {
+        font-size: 36px;
+    }
+
+    .picContainer {
+        min-width: 150px;
+        max-width: 150px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .name,
+    .title {
+        font-size: 24px;
+    }
+
+    #site-header {
+        flex-direction: column;
+    }
+}

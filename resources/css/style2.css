@@ -75,8 +75,6 @@ a:hover {
 }
 
 .name {
-    /* display: inline; */
-    /* todo: make flex? */
     font-size: 30px;
     margin-left: 28px;
     margin-top: -10px;
@@ -95,9 +93,9 @@ a:hover {
 }
 
 .picContainer {
-    position: absolute;
-    top: 300px;
-    left: 35px;
+    position: relative;
+    top: 220px;
+    left: 20px;
 }
 
 .title {
@@ -105,13 +103,6 @@ a:hover {
     font-size: 100px;
     margin-left: 20px;
 }
-
-/* .title::after {
-    content: ')';
-}
-.title::before {
-    content: '(';
-} */
 
 .navbar-dark.bg-dark {
     background-color: #5A5A5A !important;
@@ -149,7 +140,53 @@ img {
 }
 
 @media only screen and (max-width: 990px) {
+
+    #about-me,
+    #skills,
+    .nameContainer {
+        position: relative;
+        bottom: 125px;
+    }
+
+    #site-header {
+        flex-direction: column;
+    }
+
     .picContainer {
-        top: 400px;
+        top: 370px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #about-me,
+    #skills,
+    .nameContainer {
+        position: relative;
+        bottom: 125px;
+    }
+
+    #about-me p,
+    #skills p {
+        text-align: left;
+    }
+
+    #site-header {
+        flex-direction: column;
+    }
+
+    .picContainer {
+        top: 200px;
+    }
+
+    .name {
+        font-size: 50px;
+        margin-left: 20px;
+    }
+
+    .title {
+        color: #6d6a6a;
+        font-size: 50px;
+        margin-left: 20px;
     }
 }
