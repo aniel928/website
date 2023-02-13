@@ -1,9 +1,7 @@
 /* Newspaper style */
 
 body {
-    /* background: #4169e180; */
     background: #F5F2E8;
-    /* color: #304da5b3; */
     color: #5A5A5A;
     font-family: "Franklin Gothic", Monospace;
     min-width: 405px;
@@ -41,6 +39,10 @@ a:hover {
     margin-left: 10px;
 }
 
+#changeStyle .dropdown-menu.show {
+    display: grid;
+}
+
 #about-me,
 #skills {
     float: left;
@@ -69,8 +71,14 @@ a:hover {
     width: 100%;
 }
 
+#social-list {
+    display: flex;
+    flex-direction: row;
+}
+
 .container {
     display: inline-block;
+    min-width: 100%;
     width: 100%;
 }
 
@@ -96,12 +104,17 @@ a:hover {
     position: relative;
     top: 220px;
     left: 20px;
+    width: 200px;
 }
 
 .title {
     color: #6d6a6a;
     font-size: 100px;
     margin-left: 20px;
+}
+
+.emptyAfterTitle {
+    width: 200px;
 }
 
 .navbar-dark.bg-dark {
@@ -114,6 +127,7 @@ a:hover {
 
 .nav-link {
     color: #F5F2E8;
+    padding: 5px 15px;
 }
 
 hr {
@@ -126,9 +140,6 @@ hr {
 img {
     float: left;
     filter: grayscale(1);
-    /* margin-left: -15px;
-    margin-right: -15px;
-    width: calc(100% + 30px); */
 }
 
 #me,
@@ -139,7 +150,7 @@ img {
     width: 150px;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1150px) {
 
     #about-me,
     #skills,
@@ -153,11 +164,11 @@ img {
     }
 
     .picContainer {
-        top: 370px;
+        top: 250px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 750px) {
 
     #about-me p,
     #skills p {

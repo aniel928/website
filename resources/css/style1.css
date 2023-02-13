@@ -230,8 +230,8 @@ bigger screens go into media queries as a general rule
 
 @media only screen and (max-width: 400px) {
     .container {
-        margin: 30px 5px;
-        min-width: 360px;
+        margin: 30px auto;
+        min-width: 400px;
     }
 
     .name,
@@ -241,6 +241,7 @@ bigger screens go into media queries as a general rule
 
     .navbar {
         margin-right: -10px;
+        min-width: 400px;
     }
 
     #site-header {

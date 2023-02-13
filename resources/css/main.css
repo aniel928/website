@@ -9,6 +9,8 @@
 .social {
     max-height: 30px;
     max-width: 30px;
+    top: -4px;
+    position: relative;
 }
 
 .navbar-brand {
